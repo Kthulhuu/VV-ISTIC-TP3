@@ -11,6 +11,7 @@ public class StringUtils {
         if (str == null) {
             throw new IllegalArgumentException("String cannot be null");
         }
+
         for (char c : str.toCharArray()) {
             if (c == '(' || c == '[' || c == '{') {
                 stack.push(c);
